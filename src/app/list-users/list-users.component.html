@@ -1,0 +1,30 @@
+<h1>Users</h1>
+
+<div>
+<form>
+  <input type="text" id="searchFilter" name="searchFilter" class="form-control" placeholder="Search" aria-label="Search"
+    [(ngModel)]="searchFilter">
+  <button (click)="search()" class="btn btn-secondary"><i class="fas fa-search"></i>Search User by name</button>
+</form>
+</div>
+
+<br>
+
+<table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.name }}</td>
+          <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td>
+        </tr>
+      </tbody>
+	</table>
+	
+<a routerLink="/createUser" class="button fancy-button">
+  Add User
+</a>
