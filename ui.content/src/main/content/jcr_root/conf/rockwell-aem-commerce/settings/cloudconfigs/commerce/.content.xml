@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:catalogDataResourceProviderFactory="magento-graphql"
+        cq:catalogIdentifier="default"
+        cq:catalogPath="/var/commerce/products/rockwell-aem-commerce-default"
+        cq:graphqlClient="default"
+        cq:lastModified="{Date}2020-11-23T17:03:19.560-03:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/commerce/gui/components/configuration/page/template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Commerce"
+        sling:configPropertyInherit="true"
+        sling:resourceType="commerce/gui/components/configuration/page"
+        magentoGraphqlEndpoint="https://localhost:8080/graphql"
+        magentoRootCategoryId="1"
+        magentoStore="default"/>
+    <rep:policy/>
+</jcr:root>

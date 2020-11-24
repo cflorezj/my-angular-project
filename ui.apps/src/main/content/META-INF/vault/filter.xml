@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/rockwell-aem-commerce/clientlibs"/>
+    <filter root="/apps/rockwell-aem-commerce/components"/>
+    <filter root="/apps/rockwell-aem-commerce/i18n"/>
+</workspaceFilter>

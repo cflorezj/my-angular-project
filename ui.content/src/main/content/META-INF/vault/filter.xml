@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/rockwell-aem-commerce" mode="merge"/>
+    <filter root="/content/rockwell-aem-commerce" mode="merge"/>
+    <filter root="/content/dam/rockwell-aem-commerce" mode="merge"/>
+    <filter root="/content/experience-fragments/rockwell-aem-commerce" mode="merge"/>
+    <filter root="/var/commerce/products/rockwell-aem-commerce-default" mode="merge"/>
+</workspaceFilter>
