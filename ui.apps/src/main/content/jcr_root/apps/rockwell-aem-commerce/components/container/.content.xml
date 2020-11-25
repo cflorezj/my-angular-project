@@ -5,4 +5,4 @@
     jcr:primaryType="cq:Component"
     jcr:title="Container"
     sling:resourceSuperType="core/wcm/components/container/v1/container"
-    componentGroup="rockwell-aem-commerce - Content"/>
+    componentGroup=".hidden"/>

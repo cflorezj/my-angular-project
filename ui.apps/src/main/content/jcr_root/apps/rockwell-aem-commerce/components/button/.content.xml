@@ -3,4 +3,4 @@
     jcr:primaryType="cq:Component"
     jcr:title="Button"
     sling:resourceSuperType="core/cif/components/content/button/v1/button"    
-    componentGroup="rockwell-aem-commerce - Content"/>
+    componentGroup=".hidden"/>
