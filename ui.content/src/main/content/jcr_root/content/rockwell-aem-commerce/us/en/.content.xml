@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        pageTitle="rockwell-aem-commerce"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="en"
+        cq:cifCategoryPage="/content/rockwell-aem-commerce/us/en/products/category-page"
+        cq:cifProductPage="/content/rockwell-aem-commerce/us/en/products/product-page"
+        cq:cifSearchResultsPage="/content/rockwell-aem-commerce/us/en/search"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2020-11-26T14:31:49.889-03:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/rockwell-aem-commerce/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en"
         sling:resourceType="rockwell-aem-commerce/components/page"
-    >
+        navRoot="{Boolean}true"
+        pageTitle="rockwell-aem-commerce">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="rockwell-aem-commerce/components/container"
@@ -73,6 +78,8 @@
                         </cq:responsive>
                     </teaser_copy_1579324932>
                     <helloworld
+                        jcr:lastModified="{Date}2020-11-25T17:04:46.364-03:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="rockwell-aem-commerce/components/helloworld"
                         text="lalala :)"/>
@@ -80,4 +87,7 @@
             </container>
         </root>
     </jcr:content>
+    <search/>
+    <products/>
+    <landing-search/>
 </jcr:root>
