@@ -255,7 +255,7 @@
         <dependency>
             <groupId>com.adobe.commerce.cif</groupId>
             <artifactId>cif-connector-all</artifactId>
-            <version>1.5.0</version>
+            <version>1.0.0</version>
             <type>content-package</type>
         </dependency>
     </dependencies>
