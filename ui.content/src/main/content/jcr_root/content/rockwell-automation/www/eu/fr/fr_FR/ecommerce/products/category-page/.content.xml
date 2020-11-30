@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-11-26T14:28:41.749-03:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/rockwell-aem-commerce/settings/wcm/templates/page-content"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Category page"
+        jcr:uuid="b4740d8f-07a4-4013-810e-af40fdfcbb3b"
+        sling:resourceType="rockwell-aem-commerce/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="rockwell-aem-commerce/components/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="rockwell-aem-commerce/components/container">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="rockwell-aem-commerce/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="rockwell-aem-commerce/components/container"
+                    layout="responsiveGrid"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

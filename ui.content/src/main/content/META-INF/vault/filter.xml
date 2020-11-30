@@ -5,4 +5,5 @@
     <filter root="/content/dam/rockwell-aem-commerce" mode="merge"/>
     <filter root="/content/experience-fragments/rockwell-aem-commerce" mode="merge"/>
     <filter root="/var/commerce/products/rockwell-aem-commerce-default" mode="merge"/>
+    <filter root="/content/rockwell-automation/www/eu/fr/fr_FR/ecommerce" mode="merge"/>
 </workspaceFilter>

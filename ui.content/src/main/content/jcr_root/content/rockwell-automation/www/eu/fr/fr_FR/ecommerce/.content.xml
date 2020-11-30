@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:cifCategoryPage="/content/rockwell-aem-commerce/us/en/products/category-page"
-        cq:cifProductPage="/content/rockwell-aem-commerce/us/en/products/product-page"
-        cq:cifSearchResultsPage="/content/rockwell-aem-commerce/us/en/search"
+        cq:cifCategoryPage="/content/rockwell-automation/www/eu/fr/fr_FR/ecommerce/products/category-page"
+        cq:cifProductPage="/content/rockwell-automation/www/eu/fr/fr_FR/ecommerce/products/product-page"
+        cq:cifSearchResultsPage="/content/rockwell-automation/www/eu/fr/fr_FR/ecommerce/search"
+        cq:conf="/conf/rockwell-aem-commerce"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2020-11-26T14:31:49.889-03:00"
+        cq:lastModified="{Date}2020-11-27T11:10:21.194-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/rockwell-aem-commerce/settings/wcm/templates/page-content"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="en"
+        jcr:title="Commerce"
+        jcr:uuid="277a825d-db01-4c1a-9776-13df2761f1c5"
         sling:resourceType="rockwell-aem-commerce/components/page"
         navRoot="{Boolean}true"
         pageTitle="rockwell-aem-commerce">
@@ -87,4 +91,7 @@
             </container>
         </root>
     </jcr:content>
+    <search/>
+    <products/>
+    <landing-search/>
 </jcr:root>

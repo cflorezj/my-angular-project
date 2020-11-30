@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-11-26T17:56:15.104-03:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/rockwell-aem-commerce/settings/wcm/templates/page-content"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Product page"
+        jcr:uuid="be2c1eec-a383-4c55-a795-b3fd6a93274e"
+        sling:resourceType="rockwell-aem-commerce/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="rockwell-aem-commerce/components/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="rockwell-aem-commerce/components/container">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="rockwell-aem-commerce/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="rockwell-aem-commerce/components/container"
+                    layout="responsiveGrid">
+                    <product
+                        jcr:created="{Date}2020-11-26T17:56:15.101-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-11-26T17:56:15.101-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="rockwell-aem-commerce/components/commerce/product"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
