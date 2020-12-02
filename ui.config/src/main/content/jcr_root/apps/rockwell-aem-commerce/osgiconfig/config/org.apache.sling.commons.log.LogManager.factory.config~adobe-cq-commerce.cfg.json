@@ -1,9 +1,9 @@
 {
   "org.apache.sling.commons.log.pattern": "{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}",
   "org.apache.sling.commons.log.names": [
-    "com.rockwell.aem.commerce"
+    "com.adobe.cq.commerce.core"
   ],
   "org.apache.sling.commons.log.level": "debug",
-  "org.apache.sling.commons.log.file": "logs/project-rockwell-aem-commerce.log",
+  "org.apache.sling.commons.log.file": "logs/project-adobe-cq-commerce.log",
   "org.apache.sling.commons.log.additiv": "true"
 }
