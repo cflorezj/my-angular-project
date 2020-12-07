@@ -211,6 +211,10 @@ public class SearchResultsServiceImpl implements SearchResultsService {
             q.id()
                 .sku()
                 .name()
+                .description(d -> d.html())
+                .addCustomSimpleField("lead_time")
+                .addCustomSimpleField("life_cycle_status")
+                .addCustomSimpleField("repairable")
                 .smallImage(i -> i.url())
                 .urlKey()
                 .priceRange(r -> r

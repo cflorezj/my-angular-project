@@ -16,10 +16,10 @@ package com.rockwell.aem.commerce.core.models.internal;
 
 import java.util.Map;
 
+import com.rockwell.aem.commerce.core.models.ProductListItem;
 import org.apache.sling.api.SlingHttpServletRequest;
 
 import com.adobe.cq.commerce.core.components.models.common.Price;
-import com.adobe.cq.commerce.core.components.models.common.ProductListItem;
 import com.adobe.cq.commerce.core.components.services.UrlProvider;
 import com.adobe.cq.commerce.core.components.services.UrlProvider.ParamsBuilder;
 import com.day.cq.wcm.api.Page;
@@ -29,6 +29,10 @@ public class ProductListItemImpl implements ProductListItem {
     private final String sku;
     private final String slug;
     private final String name;
+    private final String description;
+    private final String leadTime;
+    private final String lifeCycleStatus;
+    private final String repairable;
     private final String imageURL;
     private final Price price;
     private final String activeVariantSku;
@@ -36,11 +40,16 @@ public class ProductListItemImpl implements ProductListItem {
     private final SlingHttpServletRequest request;
     private final UrlProvider urlProvider;
 
-    public ProductListItemImpl(String sku, String slug, String name, Price price, String imageURL, Page productPage,
+    public ProductListItemImpl(String sku, String slug, String name, String description, String leadTime, String lifeCycleStatus,
+                               String repairable, Price price, String imageURL, Page productPage,
                                String activeVariantSku, SlingHttpServletRequest request, UrlProvider urlProvider) {
         this.sku = sku;
         this.slug = slug;
         this.name = name;
+        this.description = description;
+        this.leadTime = leadTime;
+        this.lifeCycleStatus = lifeCycleStatus;
+        this.repairable = repairable;
         this.imageURL = imageURL;
         this.price = price;
         this.productPage = productPage;
@@ -98,5 +107,25 @@ public class ProductListItemImpl implements ProductListItem {
     @Override
     public Price getPriceRange() {
         return price;
+    }
+
+    @Override
+    public String getDescription() {
+        return description;
+    }
+
+    @Override
+    public String getLeadTime() {
+        return leadTime;
+    }
+
+    @Override
+    public String getLifeCycleStatus() {
+        return lifeCycleStatus;
+    }
+
+    @Override
+    public String getRepairable() {
+        return repairable;
     }
 }

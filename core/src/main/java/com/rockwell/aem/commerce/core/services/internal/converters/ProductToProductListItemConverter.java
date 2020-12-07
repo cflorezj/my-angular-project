@@ -17,6 +17,7 @@ package com.rockwell.aem.commerce.core.services.internal.converters;
 import java.util.Locale;
 import java.util.function.Function;
 
+import com.rockwell.aem.commerce.core.models.ProductListItem;
 import com.rockwell.aem.commerce.core.models.internal.PriceImpl;
 import com.rockwell.aem.commerce.core.models.internal.ProductListItemImpl;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -24,7 +25,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.adobe.cq.commerce.core.components.models.common.Price;
-import com.adobe.cq.commerce.core.components.models.common.ProductListItem;
 import com.adobe.cq.commerce.core.components.services.UrlProvider;
 import com.adobe.cq.commerce.magento.graphql.GroupedProduct;
 import com.adobe.cq.commerce.magento.graphql.ProductImage;
@@ -61,6 +61,10 @@ public class ProductToProductListItemConverter implements Function<ProductInterf
             ProductListItem productListItem = new ProductListItemImpl(product.getSku(),
                 product.getUrlKey(),
                 product.getName(),
+                product.getDescription().getHtml(),
+                product.getAsString("lead_time"),
+                product.getAsString("life_cycle_status"),
+                product.getAsString("repairable"),
                 price,
                 smallImage == null ? null : smallImage.getUrl(),
                 productPage,
