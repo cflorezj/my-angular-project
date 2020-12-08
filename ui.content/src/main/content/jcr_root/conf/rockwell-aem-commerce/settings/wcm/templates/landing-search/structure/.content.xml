@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:template="/conf/rockwell-aem-commerce/settings/wcm/templates/page-content"
+        cq:template="/conf/rockwell-aem-commerce/settings/wcm/templates/landing-search"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="rockwell-aem-commerce/components/structure/page/landingsearchpage">
         <root
