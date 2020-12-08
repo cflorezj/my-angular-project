@@ -1,11 +1,11 @@
 package com.rockwell.aem.commerce.core.models.internal;
 
-import com.adobe.cq.commerce.core.components.models.common.ProductListItem;
-import com.adobe.cq.commerce.core.components.models.searchresults.SearchResults;
 import com.adobe.cq.commerce.core.components.utils.SiteNavigation;
-import com.adobe.cq.commerce.core.search.models.SearchResultsSet;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.designer.Style;
+import com.rockwell.aem.commerce.core.models.ProductListItem;
+import com.rockwell.aem.commerce.core.models.SearchResults;
+import com.rockwell.aem.commerce.core.models.SearchResultsSet;
 import com.rockwell.aem.commerce.core.services.SearchResultsService;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -39,7 +39,7 @@ public class SearchResultsImpl implements SearchResults {
 
     @Self
     @Via(type = ResourceSuperType.class)
-    private SearchResults searchResults;
+    private com.adobe.cq.commerce.core.components.models.searchresults.SearchResults searchResults;
 
     @Self
     private SlingHttpServletRequest request;

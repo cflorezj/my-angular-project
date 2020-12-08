@@ -20,11 +20,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.adobe.cq.commerce.core.components.models.common.ProductListItem;
 import com.adobe.cq.commerce.core.search.models.Pager;
 import com.adobe.cq.commerce.core.search.models.SearchAggregation;
 import com.adobe.cq.commerce.core.search.models.SearchOptions;
-import com.adobe.cq.commerce.core.search.models.SearchResultsSet;
+import com.rockwell.aem.commerce.core.models.ProductListItem;
+import com.rockwell.aem.commerce.core.models.SearchResultsSet;
 
 public class SearchResultsSetImpl implements SearchResultsSet {
 

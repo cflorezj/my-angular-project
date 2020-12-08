@@ -15,18 +15,18 @@
 package com.rockwell.aem.commerce.core.services.internal;
 
 import com.adobe.cq.commerce.core.components.client.MagentoGraphqlClient;
-import com.adobe.cq.commerce.core.components.models.common.ProductListItem;
 import com.adobe.cq.commerce.core.components.services.UrlProvider;
 import com.adobe.cq.commerce.core.search.models.FilterAttributeMetadata;
 import com.adobe.cq.commerce.core.search.models.SearchAggregation;
 import com.adobe.cq.commerce.core.search.models.SearchOptions;
-import com.adobe.cq.commerce.core.search.models.SearchResultsSet;
 import com.adobe.cq.commerce.core.search.services.SearchFilterService;
 import com.adobe.cq.commerce.graphql.client.GraphqlResponse;
 import com.adobe.cq.commerce.magento.graphql.*;
 import com.adobe.cq.commerce.magento.graphql.gson.Error;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
+import com.rockwell.aem.commerce.core.models.ProductListItem;
+import com.rockwell.aem.commerce.core.models.SearchResultsSet;
 import com.rockwell.aem.commerce.core.models.internal.SearchResultsSetImpl;
 import com.rockwell.aem.commerce.core.services.SearchResultsService;
 import com.rockwell.aem.commerce.core.services.internal.converters.AggregationToSearchAggregationConverter;

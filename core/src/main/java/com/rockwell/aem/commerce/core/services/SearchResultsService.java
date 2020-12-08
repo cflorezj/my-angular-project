@@ -16,11 +16,11 @@ package com.rockwell.aem.commerce.core.services;
 
 import java.util.function.Consumer;
 
+import com.rockwell.aem.commerce.core.models.SearchResultsSet;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 
 import com.adobe.cq.commerce.core.search.models.SearchOptions;
-import com.adobe.cq.commerce.core.search.models.SearchResultsSet;
 import com.adobe.cq.commerce.magento.graphql.ProductInterfaceQuery;
 import com.day.cq.wcm.api.Page;
 
