@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:lastModified="{Date}2020-11-26T17:28:33.045-03:00"
         cq:lastModifiedBy="admin"
-        cq:template="/conf/rockwell-aem-commerce/settings/wcm/templates/page-content"
+        cq:template="/conf/rockwell-aem-commerce/settings/wcm/templates/landing-search"
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Landing Search"
         jcr:uuid="3c48760c-2053-4bd8-a538-5f5902e95f98"
-        sling:resourceType="rockwell-aem-commerce/components/page">
+        sling:resourceType="rockwell-aem-commerce/components/structure/page/landingsearchpage">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="rockwell-aem-commerce/components/container">
@@ -26,6 +26,64 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="rockwell-aem-commerce/components/container"
                     layout="responsiveGrid">
+                    <hero_banner
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="rockwell-aem-base/components/content/hero-banner"
+                        autoplay="true"
+                        copy="We connect the imaginations of people with the potential of technology to expand what is humanly possible, making the world more intelligent, more connected and more productive."
+                        disableParallax="false"
+                        enableBugOverlay="true"
+                        enableFixedParallax="true"
+                        enableTimeToRead="false"
+                        enableVideo="false"
+                        gradientSelect="gradient-ra-red-to-orange"
+                        invertTextColor="false"
+                        title="Bienvenue, Michelin">
+                        <responsive-images
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="rockwell-aem-base/components/content/responsive-image">
+                            <desktop
+                                jcr:lastModified="{Date}2020-06-09T16:35:40.390Z"
+                                jcr:lastModifiedBy="bjdipert"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="rockwell-aem-base/components/content/image"
+                                fileReference="/content/dam/rockwell-automation/sites/images/heroes/Home.jpg"/>
+                            <mobile
+                                jcr:lastModified="{Date}2020-06-09T16:35:40.390Z"
+                                jcr:lastModifiedBy="bjdipert"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="rockwell-aem-base/components/content/image"/>
+                        </responsive-images>
+                        <image
+                            jcr:lastModified="{Date}2020-06-09T16:35:40.390Z"
+                            jcr:lastModifiedBy="bjdipert"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="rockwell-aem-base/components/content/image"/>
+                        <HeroComponentsParsys
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/parsys">
+                            <button
+                                cq:styleIds="[primary]"
+                                jcr:created="{Date}2020-06-09T16:46:50.482Z"
+                                jcr:createdBy="bjdipert"
+                                jcr:lastModified="{Date}2020-07-14T21:55:30.451Z"
+                                jcr:lastModifiedBy="bjdipert"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="rockwell-aem-base/components/content/button"
+                                label="Discover Our Industry Expertise"
+                                path="/content/rockwell-automation/language-masters/en/industries"/>
+                            <button_172207083
+                                cq:styleIds="[primary]"
+                                jcr:created="{Date}2020-06-09T16:46:56.959Z"
+                                jcr:createdBy="bjdipert"
+                                jcr:lastModified="{Date}2020-07-14T21:55:35.481Z"
+                                jcr:lastModifiedBy="bjdipert"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="rockwell-aem-base/components/content/button"
+                                label="Explore Our Capabilities"
+                                path="/content/rockwell-automation/language-masters/en/capabilities"/>
+                        </HeroComponentsParsys>
+                    </hero_banner>
                     <searchbar
                         jcr:created="{Date}2020-11-26T17:28:33.042-03:00"
                         jcr:createdBy="admin"
