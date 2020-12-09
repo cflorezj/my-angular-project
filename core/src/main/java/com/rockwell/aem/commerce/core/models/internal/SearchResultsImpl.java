@@ -101,7 +101,7 @@ public class SearchResultsImpl implements SearchResults {
         }
     }
 
-    private Map<String, String> createFilterMap(final Map<String, String[]> parameterMap) {
+    protected Map<String, String> createFilterMap(final Map<String, String[]> parameterMap) {
         Map<String, String> filters = new HashMap<>();
         parameterMap.forEach((code, value) -> {
             // we'll make sure there is a value defined for the key
