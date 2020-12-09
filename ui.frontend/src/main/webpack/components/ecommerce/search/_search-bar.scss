@@ -1,0 +1,60 @@
+@import '../../../site/mixins';
+
+.searchBar {
+    &__searchInner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    &__form {
+        .cmp-form-text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 48px;
+            max-width: 50%;
+            margin: 0 auto;
+            border: 1px solid #bbbdc0;
+            border-radius: 6px;
+            padding: 2px;
+            box-sizing: border-box;
+
+            .icon__root{
+                width: 18px;
+                height: 18px;
+                margin-left: 5px;
+            }
+
+            @include mobile() {
+             max-width: 100%;
+            }
+            @include tablet() {
+                max-width: 100%;
+            }
+        }
+    }
+    &__input {
+        padding: 9px 25px 9px 17px;
+        border: 0;
+        outline: 0;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        width: 100%;
+        caret-color: #000;
+        border-radius: 0;
+        color: #000;
+        box-sizing: border-box;
+    }
+    &__button {
+        width: 94px;
+        height: 40px;
+        margin: 0 2px 0 19px;
+        padding: 8px 16px;
+        border-radius: 4px;
+        border: 0;
+        background-color: #cd163f;
+        color: #ffffff;
+    }
+}

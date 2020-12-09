@@ -1,0 +1,260 @@
+@import "../../site/mixins";
+
+.item__root {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    .item__name {
+        font-family: $rockwell-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        margin-right: 16px;
+        width: 100%;
+    }
+
+    .price {
+        font-family: $rockwell-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1rem;
+
+        .regularPrice {
+            text-decoration: line-through;
+            font-size: 0.8rem;
+        }
+        .discountedPrice {
+            font-weight: bold;
+            color: $rockwell-teal;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.item__images {
+    display: grid;
+    grid-template-areas: "main";
+    margin-right: 16px;
+}
+
+.item__image {
+    display: block;
+    grid-area: main;
+    height: auto;
+    opacity: 1;
+    transition-duration: 512ms;
+    transition-property: opacity, visibility;
+    transition-timing-function: ease-out;
+    visibility: visible;
+    width: 80px;
+    margin: auto;
+}
+
+.item__imagePlaceholder {
+    width: 100px;
+    height: 100px;
+}
+
+/* state: pending */
+
+.item__image_pending {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.item__name_pending {
+    background-color: $rockwell-grey;
+}
+
+.item__price_pending {
+    background-color: $rockwell-grey;
+    width: 3rem;
+}
+
+.gallery__root {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.category__style_grid .gallery__items {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    align-content: center;
+    border-top: 1px solid #dbdbdb;
+    padding-top: 20px;
+    @include mobile() {
+        width: 100%;
+    }
+    @include tablet() {
+        width: 100%;
+    }
+}
+
+.category__style_list .gallery__items {
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 640px) {
+    div .gallery__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.category__root {
+    padding: 1rem;
+}
+
+.category__root-message {
+    text-align: center;
+}
+
+.category__title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 0 1rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.category__pagination {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+}
+
+.category__categoryTitle {
+    color: $rockwell-text;
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 1.375rem;
+    text-align: center;
+}
+
+.category__pagination_root {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0.7rem;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.category__pagination_navbutton-inactive {
+    background-color: #6f6d6d !important;
+    color: white;
+}
+
+.category__pagination_navbutton-arrow {
+    width: 30px;
+    display: grid;
+    padding-bottom: 1px;
+    background-color: $rockwell-text-spot;
+    color: white;
+}
+
+.category__pagination_tilebutton {
+    grid-row-start: 1;
+    outline: none;
+}
+
+.category__pagination_tilebutton-text {
+    border: 0;
+    padding: 0.1rem 0.2rem;
+}
+
+.category__pagination_icon-root {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    touch-action: manipulation;
+}
+
+.category__pagination_tilebutton-marker {
+    border: solid 2px #dbdbdb;
+    color: $rockwell-text-spot;
+    width: 24px;
+}
+
+.category__pagination_button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-family: $rockwell-font;
+    font-size: 100%;
+    padding: 0;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-appearance: none;
+
+    :disabled {
+        cursor: default;
+        touch-action: none;
+    }
+}
+
+.category__image {
+    min-height: 460px;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    background: $rockwell-grey 50% no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.results__count {
+    color: $rockwell-text;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 200;
+}
+
+.loadmore__button {
+    display: block;
+    margin: 5px auto;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.loadmore__spinner {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+.loadmore__spinner:after {
+    content: " ";
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: $rockwell-grey-dark transparent;
+    animation: loadmore__spinner 1.2s linear infinite;
+}
+@keyframes loadmore__spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
