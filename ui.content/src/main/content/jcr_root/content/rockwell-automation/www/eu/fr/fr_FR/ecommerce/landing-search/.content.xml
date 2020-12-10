@@ -8,7 +8,7 @@
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Landing Search"
+        jcr:title=""
         jcr:uuid="3c48760c-2053-4bd8-a538-5f5902e95f98"
         sling:resourceType="rockwell-aem-commerce/components/structure/page/landingsearchpage">
         <root
