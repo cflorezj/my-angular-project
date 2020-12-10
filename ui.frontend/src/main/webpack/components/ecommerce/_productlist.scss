@@ -7,32 +7,48 @@
     border-bottom: 1px solid #dbdbdb;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    .item__name {
-        font-family: $rockwell-font;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1rem;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        margin-right: 16px;
-        width: 100%;
-    }
-
-    .price {
-        font-family: $rockwell-font;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1rem;
-
-        .regularPrice {
-            text-decoration: line-through;
-            font-size: 0.8rem;
+    .item__detail {
+        width: 80%;
+        .item__name {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            margin-right: 16px;
+            width: 100%;
         }
-        .discountedPrice {
+
+        .item__description {
+            font-size: 16px;
+        }
+
+        .item__status{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            .value {
+                font-weight: bold;
+            }
+        }
+
+        .price {
+            width: 20%;
+            font-size: 18px;
             font-weight: bold;
-            color: $rockwell-teal;
-            font-size: 1.2rem;
+            line-height: 1rem;
+            text-align: center;
+
+            .regularPrice {
+                text-decoration: line-through;
+                font-size: 0.8rem;
+            }
+            .discountedPrice {
+                font-weight: bold;
+                color: $rockwell-teal;
+                font-size: 1.2rem;
+            }
         }
     }
 }
