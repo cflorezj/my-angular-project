@@ -13,18 +13,114 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="rockwell-aem-commerce/components/container"
             layout="simple">
-            <navigation
+            <global-nav
+                jcr:lastModified="{Date}2020-07-08T16:32:34.707Z"
+                jcr:lastModifiedBy="bjdipert"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="rockwell-aem-commerce/components/navigation"
-                collectAllPages="false"
-                navigationRoot="/content/rockwell-aem-commerce/us/en"
-                skipNavigationRoot="false"
-                structureDepth="1"/>
-            <languagenavigation
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="rockwell-aem-commerce/components/languagenavigation"
-                navigationRoot="/content/rockwell-aem-commerce/us"
-                structureDepth="2"/>
+                sling:resourceType="rockwell-aem-commerce/components/structure/global-nav"
+                headerLogo="/content/dam/rockwell-automation/sites/images/logos/2019_Logo_rgb_RA_Bug-LeftText_color.svg"
+                headerLogoLink="/content/rockwell-automation/language-masters/en"
+                viewAllLabel="View All">
+                <GlobalNavSearch
+                    jcr:lastModified="{Date}2020-07-25T23:20:51.670Z"
+                    jcr:lastModifiedBy="aditya.vennelakanti"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="rockwell-automation/components/content/search"
+                    placeholderDesktop="Search"
+                    placeholderMobile="Search"
+                    searchBtnLabel="Search"
+                    searchUrl="https://www.rockwellautomation.com/search"
+                    type="inline"
+                    typeOfSearch="autosuggestDialog"/>
+                <utility-tool
+                    jcr:lastModified="{Date}2020-07-25T14:40:10.438Z"
+                    jcr:lastModifiedBy="bjdipert"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="rockwell-aem-base/components/content/utility-tool"
+                    mobileMenuTitle="Tools"
+                    numberOfMainLinks="{Long}5"
+                    usefulLinkSource="normal"
+                    viewAllLabel="View All"
+                    viewAllLink="/content/rockwell-automation/language-masters/en/tools">
+                    <mainLinks jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            mainLinkDescription="Access technical and commercial publications for hardware and software products, applications, services and solutions."
+                            mainLinkDestinationPath="/content/rockwell-automation/language-masters/en/support/documentation/literature-library"
+                            mainLinkIcon="literature-library"
+                            mainLinkTitle="Literature Library"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            mainLinkDescription="Find downloads including firmware, release notes, associated software, drivers, tools and utilities."
+                            mainLinkDestinationPath="/content/rockwell-automation/language-masters/en/support/product/product-downloads/compatability---downloads"
+                            mainLinkIcon="pcdc"
+                            mainLinkTitle="Compatibility And Downloads"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            mainLinkDescription="Browse the database of questions and answers on a variety of products and technologies."
+                            mainLinkDestinationPath="/content/rockwell-automation/language-masters/en/support/knowledgebase"
+                            mainLinkIcon="knowledgebase"
+                            mainLinkTitle="Knowledgebase"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            mainLinkDescription="Configure and select products rapidly."
+                            mainLinkDestinationPath="/content/rockwell-automation/language-masters/en/tools/product-catalog"
+                            mainLinkIcon="products-configurator"
+                            mainLinkTitle="Product Configurator"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            mainLinkDescription="One stop shopping for software and subscription services."
+                            mainLinkDestinationPath="/content/rockwell-automation/language-masters/en/tools/software-subscriptions"
+                            mainLinkIcon="software-subscriptions"
+                            mainLinkTitle="Software Subscriptions"/>
+                    </mainLinks>
+                    <textLinks jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            textLinkDestinationPath="/content/rockwell-automation/language-masters/en/tools/bill-of-materials"
+                            textLinkLabel="Bill of Materials"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            textLinkDestinationPath="/content/rockwell-automation/language-masters/en/tools/crossworks"
+                            textLinkLabel="CrossWorks"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            textLinkDestinationPath="/content/rockwell-automation/language-masters/en/support/product/product-downloads/electronic-datasheets"
+                            textLinkLabel="Electronic Datasheets"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            textLinkDestinationPath="/content/rockwell-automation/language-masters/en/support/product/product-compatibility-migration/product-lifecycle-status"
+                            textLinkLabel="Product Lifecycle Status"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            textLinkDestinationPath="/content/rockwell-automation/language-masters/en/tools/product-registration"
+                            textLinkLabel="Product Registration"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            textLinkDestinationPath="/content/rockwell-automation/language-masters/en/tools/product-selection-toolbox"
+                            textLinkLabel="Product Selection Toolbox"/>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            textLinkDestinationPath="/content/rockwell-automation/language-masters/en/tools/repairs"
+                            textLinkLabel="Repairs"/>
+                        <item7
+                            jcr:primaryType="nt:unstructured"
+                            textLinkDestinationPath="/content/rockwell-automation/language-masters/en/support/product/product-downloads/application-code-library/sample-code"
+                            textLinkLabel="Sample Code Library"/>
+                        <item8
+                            jcr:primaryType="nt:unstructured"
+                            textLinkDestinationPath="/content/rockwell-automation/language-masters/en/support/product/product-downloads/activations"
+                            textLinkLabel="Software Activations"/>
+                    </textLinks>
+                    <linksNormal jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            iconNormal="user"
+                            labelNormal="Sign In/Create an Account"
+                            rootPathNormal="/content/rockwell-automation/language-masters/en/tools/access-management"/>
+                    </linksNormal>
+                </utility-tool>
+            </global-nav>
         </root>
     </jcr:content>
 </jcr:root>

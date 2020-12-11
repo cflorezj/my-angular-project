@@ -4,6 +4,6 @@
     "com.rockwell.aem.commerce"
   ],
   "org.apache.sling.commons.log.level": "debug",
-  "org.apache.sling.commons.log.file": "logs/error.log",
+  "org.apache.sling.commons.log.file": "logs/project-rockwell-aem-commerce.log",
   "org.apache.sling.commons.log.additiv": "true"
 }
